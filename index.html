@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="display" readonly placeholder="0" />
+      <div class="tombol">
+        <input type="button" value="1" onclick="addToDisplay('1')" class="tombolAngka" />
+        <input type="button" value="2" onclick="addToDisplay('2')" class="tombolAngka" />
+        <input type="button" value="3" onclick="addToDisplay('3')" class="tombolAngka" />
+        <input type="button" value="4" onclick="addToDisplay('4')" class="tombolAngka" />
+        <input type="button" value="5" onclick="addToDisplay('5')" class="tombolAngka" />
+        <input type="button" value="6" onclick="addToDisplay('6')" class="tombolAngka" />
+        <input type="button" value="7" onclick="addToDisplay('7')" class="tombolAngka" />
+        <input type="button" value="8" onclick="addToDisplay('8')" class="tombolAngka" />
+        <input type="button" value="9" onclick="addToDisplay('9')" class="tombolAngka" />
+
+        <input type="button" value="+" onclick="addToDisplay('+')" class="eksekusi" />
+        <input type="button" value="0" onclick="addToDisplay('0')" class="tombolAngka" />
+        <input type="button" value="-" onclick="addToDisplay('-')" class="eksekusi" />
+        <input type="button" value="x" onclick="addToDisplay('*')" class="eksekusi" />
+        <input type="button" value=":" onclick="addToDisplay('/')" class="eksekusi" />
+        <input type="button" value="%" onclick="addToDisplay('%')" class="eksekusi" />
+
+        <div class="function">
+          <input type="button" value="C" onclick="clearDisplay()" class="hapus" />
+          <input type="button" value="=" onclick="calculate()" class="samaDengan" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
